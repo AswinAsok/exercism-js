@@ -1,14 +1,5 @@
-// @ts-check
-
-/**
- * Calculates the sum of the two input arrays.
- *
- * @param {number[]} array1
- * @param {number[]} array2
- * @returns {number} sum of the two arrays
- */
 export function twoSum(array1, array2) {
-  throw new Error('Implement the twoSum function');
+  return Number(String(array1.join(""))) + Number(String(array2.join("")));
 }
 
 /**
@@ -18,7 +9,8 @@ export function twoSum(array1, array2) {
  * @returns {boolean} whether the number is a palindrome or not
  */
 export function luckyNumber(value) {
-  throw new Error('Implement the luckyNumber function');
+  value = value + "";
+  return value === value.split("").reverse().join("");
 }
 
 /**
@@ -29,5 +21,16 @@ export function luckyNumber(value) {
  * @returns {string} error message
  */
 export function errorMessage(input) {
-  throw new Error('Implement the errorMessage function');
+  // ✕ identifies if there is no input value (9 ms)
+  // ✕ identifies invalid inputs (1 ms)
+  // ✕ returns an empty string for valid inputs (3 ms)
+
+  return (input != "0" && Number(input) == 0) ||
+    (input && input.length == 0) ||
+    String(input) == "null" ||
+    String(input) == "undefined"
+    ? "Required field"
+    : input != "0" && Number.isInteger(Math.round(Number(input)))
+    ? ""
+    : "Must be a number besides 0";
 }

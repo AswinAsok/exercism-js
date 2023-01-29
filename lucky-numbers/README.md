@@ -30,10 +30,10 @@ Boolean(-1);
 Boolean(0);
 // => false
 
-Boolean(' ');
+Boolean(" ");
 // => true
 
-Boolean('');
+Boolean("");
 // => false
 ```
 
@@ -46,13 +46,13 @@ Whitespaces at the beginning and the end of a string are ignored and an empty st
 If you try to convert a non-primitive value or a string that does not represent a number, the result is `NaN` ([Not-A-Number][mdn-nan]).
 
 ```javascript
-Number('  -12.34  ');
+Number("  -12.34  ");
 // => -12.34
 
-Number('1,2');
+Number("1,2");
 // => NaN
 
-Number('');
+Number("");
 // => 0
 
 Number({ num: 123 });
@@ -83,14 +83,14 @@ You can also apply the [`join` method][mdn-join] yourself, e.g. to customize the
 Note that in these cases `null` and `undefined` will be converted to an empty string.
 
 ```javascript
-String([42, null, true, 'abc']);
+String([42, null, true, "abc"]);
 // => '42,,true,abc'
 ```
 
 For objects, by default `String` returns an unhelpful text.
 
 ```javascript
-String({ key: 'value' });
+String({ key: "value" });
 // => '[object Object]'
 ```
 
@@ -125,7 +125,7 @@ Afterwards, the two strings are concatenated.
 
 ```javascript
 let name;
-'hello ' + name;
+"hello " + name;
 // => 'hello undefined'
 ```
 
@@ -213,13 +213,13 @@ If the input does not represent a non-zero number (according to the JavaScript c
 In all other cases, you can assume the input is valid, the return value should be an empty string.
 
 ```javascript
-errorMessage('123');
+errorMessage("123");
 // => ''
 
-errorMessage('');
+errorMessage("");
 // => 'Required field'
 
-errorMessage('abc');
+errorMessage("abc");
 // => 'Must be a number besides 0'
 ```
 
