@@ -4,7 +4,7 @@
 
 | Sl.no | Exercise Name             | Complexity | Progress                           | Last Updated           |
 | ----- | ------------------------- | ---------- | ---------------------------------- | --------------- |
-| 1     | Hello World               | Low        | ![Progress Bar](https://geps.dev/progress/75)  | September 2022  |
+| 1     | Hello World               | Low        | ![Progress Bar](https://geps.dev/progress/100)  | September 2022  |
 | 2     | Bird Watcher              | Low        | ![Progress Bar](https://geps.dev/progress/75)  | December 2022   |
 | 3     | Elyses Enchantments       | Low        | ![Progress Bar](https://geps.dev/progress/75)  | December 2022   |
 | 4     | Vehicle Purchase          | Low        | ![Progress Bar](https://geps.dev/progress/75)  | December 2022   |
