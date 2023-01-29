@@ -1,7 +1,5 @@
 # Exercism Exercises JavaScript
 
-The exercises which are done on the javascript track of the exercism platform are listed below.
-
 # Exercism Exercises Log
 
 | Sl.no | Exercise Name             | Complexity | Progress                           | Last Updated           |
@@ -23,4 +21,5 @@ The exercises which are done on the javascript track of the exercism platform ar
 
 Exercism: [Aswin Asok](https://exercism.org/profiles/AswinAsok)
 
-P.S Exercises which are at 75% code can be improved. Will be working out on them on upcoming day!.
+P.S Exercises which are at 75%, code structure must be improved. 
+Will be working out on them on upcoming days!
