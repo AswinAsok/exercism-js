@@ -49,6 +49,4 @@ export function remainingOrders(numberOfMinutesLeft, arrayOfJuices)
     
     
     return(arrayOfJuices);
-    
-    //return array that Li Mei cannot prepare
   }

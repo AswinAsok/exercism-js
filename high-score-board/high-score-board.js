@@ -10,7 +10,7 @@ export function createScoreBoard()
 export function addPlayer(existingScoreBoard, name, score)
   {
     existingScoreBoard[name] = score;
-    console.log(existingScoreBoard);
+
     return(existingScoreBoard);
   }
 

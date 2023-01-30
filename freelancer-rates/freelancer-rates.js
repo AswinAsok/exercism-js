@@ -14,7 +14,6 @@ export function priceWithMonthlyDiscount(hourlyRate,totalNumberOfDays, discount)
 
   discount = (1-discount); 
   let exceedingDays = (totalNumberOfDays%22);
-  console.log(exceedingDays);
 
   return Math.ceil(months * 22 * (discount*dayRate(hourlyRate)) + exceedingDays * dayRate(hourlyRate));
 }
