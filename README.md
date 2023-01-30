@@ -21,6 +21,3 @@
 ## Public Profile Link
 
 Exercism: [Aswin Asok](https://exercism.org/profiles/AswinAsok)
-
-P.S Exercises which are at 100%, code structure must be improved. 
-Will be working out on them on upcoming days!
