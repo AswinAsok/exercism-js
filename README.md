@@ -17,6 +17,7 @@
 | 11    | High Score Board          | Low        | ![Progress Bar](https://geps.dev/progress/100)  | January 30 2023 |
 | 12    | Vehicle Purchase          | Low        | ![Progress Bar](https://geps.dev/progress/100)  | January 30 2023 |
 | 13    | Giga Second               | Low        | ![Progress Bar](https://geps.dev/progress/100)  | January 30 2023 |
+| 14    | Lasagna Master            | Low        | ![Progress Bar](https://geps.dev/progress/80)   | January 31 2023 |
 
 ## Public Profile Link
 
