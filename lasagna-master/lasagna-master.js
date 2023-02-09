@@ -16,39 +16,40 @@ export const cookingStatus = function (remainingTime) {
     ? remainingTime > 0
       ? "Not done, please wait."
       : "You forgot to set the timer."
-    : "Lasagna is done.";
-};
+    : "Lasagna is done."
+}
 
 export const preparationTime = function (layerArray, averageTime = 2) {
-  return layerArray.length * averageTime;
-};
+  return layerArray.length * averageTime
+}
 
 export const quantities = function (layerArray) {
-  let noodlesCount = 0;
-  let sauceCount = 0;
+  let noodlesCount = 0
+  let sauceCount = 0
 
   layerArray.forEach((layer) => {
     layer === "noodles"
       ? (noodlesCount += 50)
       : layer === "sauce"
       ? (sauceCount += 0.2)
-      : null;
-  });
+      : null
+  })
 
-  return { noodles: noodlesCount, sauce: sauceCount };
-};
+  return { noodles: noodlesCount, sauce: sauceCount }
+}
 
 export const addSecretIngredient = function (friendList, myList) {
-  myList.push(friendList[friendList.length - 1]);
-};
+  myList.push(friendList[friendList.length - 1])
+}
 
 export const scaleRecipe = function (recipe, portionNumber) {
-  let newRecipe = recipe;
+  let newRecipe = { ...recipe }
 
-  // Iterate through the object
-  for (const key in newRecipe) {
-   newRecipe.key
+  for (let item in newRecipe) {
+    if (newRecipe.hasOwnProperty(item)) {
+      newRecipe[item] = (newRecipe[item] / 2) * portionNumber
+    }
   }
 
-  return newRecipe;
-};
+  return newRecipe
+}
